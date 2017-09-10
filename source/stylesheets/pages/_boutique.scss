@@ -1,0 +1,13 @@
+#boutique {
+  color: white;
+  .boutique-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .boutique-text {
+    margin: 50px 50px;
+    text-align: center;
+  }
+
+}

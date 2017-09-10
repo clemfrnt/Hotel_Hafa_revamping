@@ -1,0 +1,21 @@
+---
+title: Hotel Hafa Bar
+---
+<div id="bar">
+  <h1 class="text-center">Discover our Bar Le Zouave</h1>
+  <% i = 0 %>
+  <% 5.times do %>
+    <div class="bar-item">
+      <% i += 1 %>
+      <%= image_tag "bar/bar#{i}.jpg", width: 500 %>
+    <div class="bar-text">
+      <div class="bar-quote">
+        <p>"« At night time, Le Zouave serves the best margaritas in town: grapefruit or cucumber-mint, choos your favorite. »</p>
+      </div>
+       <div class="bar-description">
+        <p> A small, beautiful bar by Petit Hotel Hafa, located in Sayulita, Mexico. We bring not only good music and relaxing atmosphere but great wines, cocktails, tapas and much more.</p>
+      </div>
+    </div>
+    </div>
+  <% end %>
+</div>

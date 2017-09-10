@@ -1,16 +1,41 @@
 #contact {
   color: white;
-}
-
-.contact-form {
-
-}
-.contact-details {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.contact-map {
 
+.contact-form {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+  input {
+    margin: 5px 0;
+  }
+  #form-name {
+  }
+}
+.contact-details {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  p {
+    margin:0;
+  }
+}
+
+.contact-map {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .map {
+  height: 300px;
+  width: 700px;
+  margin: 30px;
+  background-color: $light-grey;
+  }
 }
 

@@ -1,0 +1,22 @@
+---
+title: Hotel Hafa Boutique
+---
+<div id="boutique">
+
+  <h1 class="text-center">Shop at our Boutique</h1>
+  <% i = 0 %>
+  <% 4.times do %>
+    <div class="boutique-item">
+        <% i += 1 %>
+        <%= image_tag "boutique/boutique#{i}.jpg", width: 500 %>
+      <div class="boutique-text">
+        <div class="boutique-quote">
+          <p>« Live what you love »</p>
+        </div>
+         <div class="boutique-description">
+          <p> Enormous hearts decorate this beautiful art & jewelry shop.  Here you will encounter art & decorative pieces from many different regions of Mexico, as well as stunning yet casual pearl jewelry designed by the shop’s owner, Marina Garcia. She has combined leather & pearls to create a type of jewelry that is easy to wear, that passes on love and thrill for life to those who wear them. Pearls will always be the mystery of those who wear them.</p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

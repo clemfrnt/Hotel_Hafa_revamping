@@ -1,0 +1,27 @@
+#bar {
+  color:white;
+  .bar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+.bar-picture {
+  img{
+   margin: 15px 0;
+  }
+}
+
+.bar-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.bar-quote {
+
+}
