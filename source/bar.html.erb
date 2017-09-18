@@ -3,19 +3,52 @@ title: Hotel Hafa Bar
 ---
 <div id="bar">
   <h1 class="text-center">Discover our Bar Le Zouave</h1>
-  <% i = 0 %>
-  <% 5.times do %>
-    <div class="bar-item">
-      <% i += 1 %>
-      <%= image_tag "bar/bar#{i}.jpg", width: 500 %>
-    <div class="bar-text">
-      <div class="bar-quote">
-        <p>"« At night time, Le Zouave serves the best margaritas in town: grapefruit or cucumber-mint, choos your favorite. »</p>
-      </div>
-       <div class="bar-description">
-        <p> A small, beautiful bar by Petit Hotel Hafa, located in Sayulita, Mexico. We bring not only good music and relaxing atmosphere but great wines, cocktails, tapas and much more.</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+         <div id="BarCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#BarCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#BarCarousel" data-slide-to="1"></li>
+          <li data-target="#BarCarousel" data-slide-to="2"></li>
+          <li data-target="#BarCarousel" data-slide-to="3"></li>
+          <li data-target="#BarCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+           <%= image_tag "bar/bar1.jpg", width: 600 %>
+          </div>
+          <% i = 1 %>
+          <% 4.times do %>
+            <% i += 1 %>
+            <div class="item">
+              <%= image_tag "bar/bar#{i}.jpg", width: 600 %>
+            </div>
+          <% end %>
+        </div>
+         <!-- Left and right controls -->
+        <a class="left carousel-control" href="#BarCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#BarCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="bar-text">
+        <div class="bar-quote">
+          <p>"« At night time, Le Zouave serves the best margaritas in town: grapefruit or cucumber-mint, choos your favorite. »</p>
+        </div>
+         <div class="bar-description">
+          <p> A small, beautiful bar by Petit Hotel Hafa, located in Sayulita, Mexico. We bring not only good music and relaxing atmosphere but great wines, cocktails, tapas and much more.</p>
+        </div>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
+
