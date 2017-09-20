@@ -4,6 +4,9 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  h1 {
+    margin-bottom: 60px;
+  }
 }
 
 .contact-form {
@@ -20,8 +23,12 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  margin: 40px 0;
   p {
     margin:0;
+  }
+  h4 {
+    color: $red;
   }
 }
 

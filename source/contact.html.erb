@@ -3,48 +3,57 @@ title: Hotel Hafa - Contact
 ---
 
 <div id="contact">
-  <h1 class="text-center">Check availability</h1>
-  <div class="contact-form">
-   <form accept-charset="UTF-8" action="https://formkeep.com/f/02ec4050f863" method="POST">
-    <div id="form-name">
-    <input type="text" name="first_name" placeholder="First Name">
-     <input type="text" name="last_name" placeholder="Last Name">
-    </div>
-    <div id="form-email">
-    <input type="email" name="email" placeholder="Your Email" label="Email">
-    </div>
-    <div id="form-country">
-    <input type="text" name="country" placeholder="Your Country">
-    </div>
-    <div id="form-message">
-    <input type="text" name="message" placeholder="Comments">
-    </div>
-    <div id="form-dates">
-    <input type="dates" name="check_in_date" placeholder="Check-in date">
-    <input type="dates" name="check_ut_date" placeholder="Check-out date"">
-    </div>
-    <div id="form-pax-number">
-    <input type="number" name="pax_number" placeholder="Number of people">
-    </div>
-    <div id="form-accomodation-type">
-    <input type="text" name="message" placeholder="Type of accomodation required">
-    </div>
+  <div class="row">
+     <div class="col-xs-8 col-xs-offset-2">
+      <h1 class="text-center">Check availability</h1>
+      <div class="contact-form ">
+       <form accept-charset="UTF-8" action="https://formkeep.com/f/02ec4050f863" method="POST" class="text-center">
+        <div id="form-name">
+        <div class="row">
+          <div class="col-xs-6">
+            <input type="text" name="first_name" placeholder="First Name" class="form-control">
+          </div>
+          <div class="col-xs-6">
+            <input type="text" name="last_name" placeholder="Last Name" class="form-control">
+          </div>
+        </div>
+        <div id="form-email form-group">
+        <input type="email" name="email" placeholder="Your Email" label="Email" class="form-control">
+        </div>
+        <div id="form-country">
+        <input type="text" name="country" placeholder="Your Country" class="form-control">
+        </div>
+        <div id="form-dates">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <input type="dates" name="check_in_date" placeholder="Check-in date" class="form-control">
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <input type="dates" name="check_ut_date" placeholder="Check-out date" class="form-control">
+          </div>
+        </div>
+        </div>
+        <div id="form-pax-number">
+        <input type="number" name="pax_number" placeholder="Number of people" class="form-control">
+        </div>
 
-    <input type="hidden" name="utf8" value="✓">
-    <button type="submit">Submit</button>
-</form>
-  </div>
-  <div class="contact-details">
-    <h5>Petit Hotel d’Hafa</h5>
-    <p>Calle Revolucion No. 55</p>
-   <p>Sayulita, Nayarit, MEX</p>
-   <p>Tel: 0052 329 291 3806</p>
-   <p>Cel: 0052 322 779 3573</p>
-   <p>hotelhafasayulita@yahoo.com</p>
-  </div>
-  <div class="contact-map">
-    <div class="map">
-      Map to be delivered
+        <input type="hidden" name="utf8" value="✓">
+        <button type="submit" class="btn btn-danger btn-block">Submit</button>
+      </form>
+      </div>
+      <div class="contact-details">
+        <h4>Petit Hotel d’Hafa</h4>
+        <p>Calle Revolucion No. 55</p>
+       <p>Sayulita, Nayarit, MEX</p>
+       <p>Tel: 0052 329 291 3806</p>
+       <p>Cel: 0052 322 779 3573</p>
+       <p>hotelhafasayulita@yahoo.com</p>
+      </div>
+      <div class="contact-map">
+        <div class="map">
+          Map to be delivered
+        </div>
+      </div>
     </div>
   </div>
 </div>
