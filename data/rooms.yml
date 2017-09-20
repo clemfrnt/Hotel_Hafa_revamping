@@ -1,0 +1,41 @@
+
+hafarooms:
+  - number: 1
+    image: "Room1.jpg"
+    description: "Follow a path of hearts to your room, sleeping up to three people, has a large bathroom with a palapa roof, mini fridge, and a king size bed plus one single bed, or three single beds total. It is a very spacious and bright room."
+    price: $103. US. A/C with an extra charge of $10 us per night.*"
+
+  - number: 2
+    image: "Room2.jpg"
+    description: "Windows overlooking the street, sleeping up to three people, very spacious with a large bathroom, mini fridge, king size bed plus one single bed, or three single beds total. Similar to room #1."
+    price:  $103.00 US. A/C for $10 us extra per night.*"
+
+  - number: 3
+    image: "Room3.jpg"
+    description: "Window to the courtyard, nice bathroom, king size bed and a mini fridge really nice."
+    price: $92.00 US. A/C for $10 us extra per night.*"
+
+  - number: 4
+    image: Room4.jpg
+    description: "Window overlooking the street, king size bed, bathroom, mini fridge, with windows viewing the main street of Sayulita."
+    price: $65.00 US. A/C for $10 us extra per night.*"
+
+  - number: 5
+    image: Room5.jpg
+    description: "King size bed, nice bathroom, mini fridge, window to the main street, great room."
+    price: $58.00 US. A/C for $10 us extra per night.*"
+
+  - number: 6
+    image: Room6.jpg
+    description: "Nice little room on street level, king size bed, or 2 single beds, mini fridge, nice bathroom, with a fan."
+    price: $42.00 US. NO A/C.*
+
+  - number: 7
+    image: Room7.jpg
+    description: "Spacious and nice room on street level with a king size bed, or 2 single beds, mini fridge, nice bathroom, with a fan."
+    price: $58.00 US. A/C for $10 us extra per night.*"
+
+  - number: 8
+    image: Room8.jpg
+    description: "Very spacious and nice room on the street level. Sleeping up to  3 people, with a king size bed plus one single bed, or three single bed totals. Mini fridge, nice bathroom, with a fan."
+    price: $65.00 US. A/C for $10 us extra per night.*"

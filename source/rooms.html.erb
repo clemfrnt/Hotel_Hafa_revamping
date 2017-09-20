@@ -1,15 +1,17 @@
 ---
 title: Hotel Hafa Rooms
 ---
-<div class= rooms>
-  <% i = 0 %>
-  <% 8.times do %>
-    <div class= room>
-      <% i +=1 %>
-      <h1><%= "Room ##{i}" %></h1>
-      <div class= room-description>
-        <%= image_tag "rooms/Room#{i}.jpg", width: 250 %>
-        <p>description</p>
+<div class= row>
+
+  <% data.rooms.hafarooms.each do |r| %>
+    <div class= row>
+      <div class=" col-xs-10 col-xs-offset-1 col-sm-3 ">
+      <h1>Room#<%= r.number %></h1>
+        <%= image_tag "rooms/#{r.image}", width: 400 %>
+      </div>
+      <div class= "col-xs-10 col-xs-offset-1 col-sm-6 room-description ">
+      <p><%= r.description %></p>
+      <p><%= r.price %></p>
       </div>
     </div>
   <% end %>
