@@ -1,5 +1,5 @@
 #bar {
-  h1,p {
+  h1,h4, p {
     color:white;
     text-align: center;
   }
@@ -18,7 +18,8 @@
   text-align: center;
 }
 
-.bar-quote {
+.bar-quote h4{
+  font-family: 'Indie Flower', cursive !important;
 
 }
 
