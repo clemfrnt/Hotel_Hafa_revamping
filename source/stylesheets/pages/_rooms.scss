@@ -2,14 +2,16 @@ p, h4{
   color: white;
 }
 
-.room-description {
-  line-height: 150%;
-}
+#room {
+  .room-description {
+    line-height: 150%;
+  }
 
-img {
-  margin: 20px;
-}
+  img {
+    margin: 20px;
+  }
 
-.room-price-mention {
-  font-size: 18px;
+  .room-price-mention {
+    font-size: 18px;
+  }
 }

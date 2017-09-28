@@ -1,21 +1,22 @@
 ---
 title: Hotel Hafa Rooms
 ---
-<div class= row>
-
-  <% data.rooms.hafarooms.each do |r| %>
-    <div class= row>
-      <div class=" col-xs-10 col-xs-offset-1 col-sm-3 ">
-        <%= image_tag "rooms/#{r.image}", width: 400 %>
+<div id="room">
+  <div class= row>
+    <% data.rooms.hafarooms.each do |r| %>
+      <div class= row>
+        <div class=" col-xs-10 col-xs-offset-1 col-sm-3 ">
+          <%= image_tag "rooms/#{r.image}", width: 400 %>
+        </div>
+        <div class= "col-xs-10 col-xs-offset-1 col-sm-6 room-description ">
+        <h4>Room#<%= r.number %></h4>
+        <p><%= r.description %></p>
+        <p><%= r.price %></p>
+        </div>
       </div>
-      <div class= "col-xs-10 col-xs-offset-1 col-sm-6 room-description ">
-      <h4>Room#<%= r.number %></h4>
-      <p><%= r.description %></p>
-      <p><%= r.price %></p>
-      </div>
+    <% end %>
+    <div class= "col-xs-10 col-xs-offset-1 col-sm-3 room-price-mention">
+      <p>* Prices not guaranteed, subject to changes</p>
     </div>
-  <% end %>
-  <div class= "col-xs-10 col-xs-offset-1 col-sm-3 room-price-mention">
-    <p>* Prices not guaranteed, subject to changes</p>
   </div>
 </div>
