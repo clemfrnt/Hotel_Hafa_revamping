@@ -26,3 +26,18 @@
 .bar-description {
   margin-top: 50px;
 }
+
+.mention {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.link-mention {
+  color:$red;
+}
+
+.link-mention:hover {
+  text-decoration: none;
+  color:$red;
+  opacity: 0.8;
+}
