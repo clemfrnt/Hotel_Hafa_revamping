@@ -22,12 +22,15 @@ title: Hotel Hafa
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <% i = 0 %>
-              <% 6.times do %>
-                <% i += 1 %>
-                <%= image_tag "home/homepage#{i}.jpg", width: 1400 %>
-              <% end %>
+              <%= image_tag "home/homepage1.jpg", width: 1400 %>
             </div>
+            <% i = 0 %>
+            <% 5.times do %>
+              <% i += 1 %>
+              <div class="item">
+                <%= image_tag "home/homepage#{i}.jpg", width: 1400 %>
+              </div>
+            <% end %>
           </div>
         </div>
           <!-- Left and right controls -->
