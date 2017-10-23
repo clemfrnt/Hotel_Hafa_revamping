@@ -16,6 +16,9 @@ gem 'bootstrap-datepicker-rails'
 gem "coffee-rails"
 gem "gmaps4rails"
 
+#datepicker-jquerytest
+gem 'jquery-ui-middleman'
+
 source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
 end

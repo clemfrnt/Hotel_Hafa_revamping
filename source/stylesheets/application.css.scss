@@ -7,6 +7,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+/*
+ *= require jquery.ui.all
+ */
 
 // Your CSS partials
 @import "layouts/index";
