@@ -12,3 +12,10 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'bootstrap-datepicker-rails'
 
+# Gmaps
+gem "coffee-rails"
+gem "gmaps4rails"
+
+source 'https://rails-assets.org' do
+  gem "rails-assets-underscore"
+end

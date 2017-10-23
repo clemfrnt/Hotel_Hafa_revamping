@@ -7,6 +7,15 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
+
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="Hotel Hafa, Sayulita" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="hotelhafasayulita.com" />
+    <meta property="og:image" content="<%= image_tag "logo.png" %>" />
+    <meta property="og:description" content="Petit Hotel Hafa is a boutique hotel experience of bohemian tropical Mexico.  Enjoy the roof deck overlooking all of Sayulita while being only two blocks from the beach. "/>
+    <meta property="og:site_name" content="Hotel Hafa, Sayulita" />
+
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
@@ -15,5 +24,14 @@
     <%= partial "navbar" %>
     <%= yield %>
     <%= partial "footer" %>
+     <%= javascript_include_tag "https://maps.google.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}" %>
+    <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
+    <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/infobox/src/infobox_packed.js" %>
+    <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" %>
+
+    <%= javascript_include_tag 'application' %>
+    <%= yield(:after_js) %>
   </body>
 </html>
+
+
