@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.home-pictures {
+.home-caroussel {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,21 +30,22 @@
    }
 }
 
-.home-description {
+.home-row-description {
   display: flex;
   align-items: center;
   justify-content: space-between;
   img {
       margin: 0 15px;
+      margin-top: 60px
      }
 }
 
-.home-about {
+.home-row-about {
   display: flex;
   align-items: center;
   justify-content: space-between;
   img {
-    margin: 0 15px;
+    margin: 30px 20px;
    }
   }
 
