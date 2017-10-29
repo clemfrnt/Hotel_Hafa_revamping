@@ -7,11 +7,17 @@
   }
 }
 .home-row-description {
-  margin-top: 20px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home-row-about {
-  margin-top: 20px;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .home-pictures {
@@ -41,7 +47,6 @@
     margin: 0 15px;
    }
   }
-
 
 .home-quote h2 {
   font-family: 'Indie Flower', cursive !important;
