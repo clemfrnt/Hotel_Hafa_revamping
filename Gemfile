@@ -12,9 +12,9 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'bootstrap-datepicker-rails'
 
-# Gmaps
-gem "coffee-rails"
-gem "gmaps4rails"
+# # Gmaps
+# gem "coffee-rails"
+# gem "gmaps4rails"
 
 #datepicker-jquerytest
 gem 'jquery-ui-middleman'
