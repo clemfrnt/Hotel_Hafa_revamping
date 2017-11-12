@@ -1,69 +1,75 @@
 ---
 title: Hotel Hafa - Contact
 ---
-
 <div id="contact">
   <div class="row">
-     <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-xs-8 col-xs-offset-2">
       <h2 class="text-center">Check availability</h2>
       <div class="contact-form ">
-       <form accept-charset="UTF-8" action="https://formkeep.com/f/02ec4050f863" method="POST" class="text-center">
-        <div id="form-name">
-        <div class="row">
-          <div class="col-xs-6">
-            <input type="text" name="first_name" placeholder="First Name" class="form-control">
+        <form accept-charset="UTF-8" action="https://formkeep.com/f/02ec4050f863" method="POST" class="text-center">
+          <div id="form-name">
+            <div class="row">
+              <div class="col-xs-6">
+                <input type="text" name="first_name" placeholder="First Name" class="form-control">
+              </div>
+              <div class="col-xs-6">
+                <input type="text" name="last_name" placeholder="Last Name" class="form-control">
+              </div>
+            </div>
+            <div id="form-email form-group">
+              <input type="email" name="email" placeholder="Your Email" label="Email" class="form-control">
+            </div>
+            <div id="form-country">
+              <input type="text" name="country" placeholder="Your Country" class="form-control">
+            </div>
+            <div id="form-dates">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                  <input type="dates" name="check_in_date" placeholder="Check-in date" class="form-control datepicker" >
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="dates" name="check_ut_date" placeholder="Check-out date" class="form-control datepicker" >
+                </div>
+              </div>
+            </div>
+            <div id="form-pax-number">
+              <input type="number" name="pax_number" placeholder="Number of people" class="form-control">
+            </div>
+            <div id="form-message">
+              <textarea name="message" rows="4" placeholder="Add a message" class="form-control"></textarea>
+            </div>
+            <input type="hidden" name="utf8" value="✓">
+            <button type="submit" class="btn btn-danger btn-block">Submit</button>
           </div>
-          <div class="col-xs-6">
-            <input type="text" name="last_name" placeholder="Last Name" class="form-control">
+        </form>
+        <div class="contact-details">
+          <h4>Petit Hotel d’Hafa</h4>
+          <p>Calle Revolucion No. 55</p>
+          <p>Sayulita, Nayarit, MEX</p>
+          <p>Tel: 0052 329 291 3806</p>
+          <p>Cel: 0052 322 779 3573</p>
+          <p>hotelhafasayulita@yahoo.com</p>
+        </div>
+        <div class="contact-map">
+          <div id="map">
           </div>
-        </div>
-        <div id="form-email form-group">
-        <input type="email" name="email" placeholder="Your Email" label="Email" class="form-control">
-        </div>
-        <div id="form-country">
-        <input type="text" name="country" placeholder="Your Country" class="form-control">
-        </div>
-        <div id="form-dates">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <input type="dates" name="check_in_date" placeholder="Check-in date" class="form-control datepicker" >
-          </div>
-          <div class="col-xs-12 col-sm-6">
-            <input type="dates" name="check_ut_date" placeholder="Check-out date" class="form-control datepicker" >
-          </div>
-        </div>
-        </div>
-        <div id="form-pax-number">
-        <input type="number" name="pax_number" placeholder="Number of people" class="form-control">
-        </div>
-         <div id="form-message">
-         <textarea name="message" rows="4" placeholder="Add a message" class="form-control"></textarea>
-        </div>
-        <input type="hidden" name="utf8" value="✓">
-        <button type="submit" class="btn btn-danger btn-block">Submit</button>
-      </form>
-      </div>
-      <div class="contact-details">
-        <h4>Petit Hotel d’Hafa</h4>
-        <p>Calle Revolucion No. 55</p>
-       <p>Sayulita, Nayarit, MEX</p>
-       <p>Tel: 0052 329 291 3806</p>
-       <p>Cel: 0052 322 779 3573</p>
-       <p>hotelhafasayulita@yahoo.com</p>
-      </div>
-      <div class="contact-map">
-        <div id="map">
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Permet à la page de continuer à charger alors que le script JS charge -->
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_BROWSER_KEY'] %>&callback=initMap"
+  async defer>
+</script>
 
 <% content_for(:after_js) do %>
-  <script>
-      $(".datepicker").datepicker(
-    format: 'dd/mm/yyyy',
-    startDate: '1d',
-    autoclose: true);
-  </script>
+<script>
+$(".datepicker").datepicker(
+format: 'dd/mm/yyyy',
+startDate: '1d',
+autoclose: true);
+</script>
 <% end %>
+
+
