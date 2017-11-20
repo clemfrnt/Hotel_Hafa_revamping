@@ -16,15 +16,15 @@ configure :build do
   set :relative_links, true
 end
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
-end
+#activate :deploy do |deploy|
+  #deploy.build_before = true
+  #deploy.deploy_method = :git
+#end
 
 activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.host            = 'ftp.example.com'
+  deploy.build_before   = :ftp
+  deploy.host            = 'ftp.hotelhafasayulita.com'
   deploy.path            = '/srv/www/site'
-  deploy.user            = 'tvaughan'
-  deploy.password        = 'secret'
+  deploy.user            = 'hotelhafa'
+  deploy.password        = 'SXusU5Mp'
 end
