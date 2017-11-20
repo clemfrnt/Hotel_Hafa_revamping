@@ -21,3 +21,10 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
+activate :deploy do |deploy|
+  deploy.method   = :ftp
+  deploy.host            = 'ftp.example.com'
+  deploy.path            = '/srv/www/site'
+  deploy.user            = 'tvaughan'
+  deploy.password        = 'secret'
+end
