@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.4'
 
 gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
@@ -24,3 +25,5 @@ source 'https://rails-assets.org' do
 end
 
 gem "figaro"
+
+
