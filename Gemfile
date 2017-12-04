@@ -26,4 +26,6 @@ end
 
 gem "figaro"
 
-
+gem 'rake'
+gem 'puma'
+gem 'rack-contrib'
