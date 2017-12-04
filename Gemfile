@@ -25,7 +25,3 @@ source 'https://rails-assets.org' do
 end
 
 gem "figaro"
-
-gem 'rake'
-gem 'puma'
-gem 'rack-contrib'

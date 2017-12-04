@@ -19,6 +19,7 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+  deploy.branch = 'master'
 end
 
 #activate :deploy do |deploy|
@@ -28,9 +29,3 @@ end
   #deploy.user            = 'hotelhafa'
   #deploy.password        = 'SXusU5Mp'
 #end
-
-# Use “pretty” URLs (without the `.html` suffix)
-activate :directory_indexes
-
-# Append hashes to compiled assets
-activate :asset_hash
