@@ -13,10 +13,6 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'bootstrap-datepicker-rails'
 
-# # Gmaps
-# gem "coffee-rails"
-# gem "gmaps4rails"
-
 #datepicker-jquerytest
 gem 'jquery-ui-middleman'
 
@@ -24,7 +20,12 @@ source 'https://rails-assets.org' do
   gem "rails-assets-underscore"
 end
 
+#To keep hidden yml & google key
 gem "figaro"
 
+# Heroku
 gem 'rack-contrib'
 gem 'puma'
+
+# SEO serch engine Sitemap
+gem 'middleman-search_engine_sitemap'

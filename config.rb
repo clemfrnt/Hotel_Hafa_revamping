@@ -29,3 +29,10 @@ end
   #deploy.user            = 'hotelhafa'
   #deploy.password        = 'SXusU5Mp'
 #end
+
+#Sitemap to improve SEO
+page "/sitemap.xml", :layout => false
+
+# Sitemap
+set :url_root, 'http://developingjourney.netlify.com/'
+activate :search_engine_sitemap
