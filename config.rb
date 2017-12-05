@@ -34,5 +34,5 @@ end
 page "/sitemap.xml", :layout => false
 
 # Sitemap
-set :url_root, 'http://developingjourney.netlify.com/'
+set :url_root, 'http://www.hotelhafa-sayulita.com/'
 activate :search_engine_sitemap
