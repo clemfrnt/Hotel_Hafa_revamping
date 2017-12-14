@@ -29,3 +29,4 @@ gem 'puma'
 
 # SEO serch engine Sitemap
 gem 'middleman-search_engine_sitemap'
+gem 'middleman-robots'

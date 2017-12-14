@@ -36,3 +36,10 @@ page "/sitemap.xml", :layout => false
 # Sitemap
 set :url_root, 'http://www.hotelhafa-sayulita.com/'
 activate :search_engine_sitemap
+
+#robot.txt
+activate :robots,
+  :rules => [
+    {:user_agent => '*', :allow => %w(/)}
+  ],
+  :sitemap => "http://www.hotelhafa-sayulita.com/sitemap.xml"
