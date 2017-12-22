@@ -7,7 +7,8 @@ title: Hotel Hafa Press
     <% 7.times do %>
       <div class="col-xs-6 col-sm-3">
         <!-- insert <div class="card"> -->
-        <%= link_to image_tag("press/press#{i}.png", class: "pressgallery"), "press/press_magazine_#{i}.pdf", target: "_blank" %>
+        <!-- i<%= link_to image_tag("press/press#{i}.png", class: "pressgallery"), "press/press_magazine_#{i}.pdf", target: "_blank" %>-->
+        <%= image_tag"press/press#{i}.png", class: "pressgallery" %>
         <% i += 1 %>
       </div>
     <% end %>
