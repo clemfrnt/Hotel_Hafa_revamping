@@ -8,16 +8,10 @@
 }
 .home-row-description {
   margin-top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .home-row-about {
   margin-top: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .home-caroussel {
@@ -30,24 +24,9 @@
    }
 }
 
-.home-row-description {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  img {
-      margin: 0 15px;
-      margin-top: 60px
-     }
+.home-description {
+  padding-top: 30px;
 }
-
-.home-row-about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  img {
-    margin: 30px 20px;
-   }
-  }
 
 .home-quote h2 {
   font-family: 'Indie Flower', cursive !important;
@@ -59,3 +38,18 @@
   margin: 10px 0px;
 }
 
+.home-description {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home-row-description {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+   .home-row-about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
