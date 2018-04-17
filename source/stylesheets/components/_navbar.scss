@@ -75,8 +75,35 @@
   border-top: 1px solid $red !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .navbar-hafa {
      padding: 0px 50px 0 20px;
   }
 }
+
+/* Line menu */
+.tabs {
+  display: flex;
+  padding: 30px 0px;
+}
+.tabs a {
+  color: white;
+  font-size: 20px;
+  padding: 1px;
+}
+.tabs a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.tabs p {
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+.tab {
+  flex: 0 0 10%;
+  text-align: center;
+  padding: 20px 0;
+}
+
