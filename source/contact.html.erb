@@ -51,25 +51,12 @@ title: Hotel Hafa - Contact
           <p>hotelhafasayulita@yahoo.com</p>
         </div>
         <div class="contact-map">
-          <div id="map">
-          </div>
+          <%= image_tag "map.jpg", class: "home-pic-front-desc" %>
         </div>
       </div>
     </div>
   </div>
 </div>
-<!-- Permet à la page de continuer à charger alors que le script JS charge -->
-<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_BROWSER_KEY'] %>&callback=initMap"
-  async defer>
-</script>
 
-<% content_for(:after_js) do %>
-<script>
-$(".datepicker").datepicker(
-format: 'dd/mm/yyyy',
-startDate: '1d',
-autoclose: true);
-</script>
-<% end %>
 
 
